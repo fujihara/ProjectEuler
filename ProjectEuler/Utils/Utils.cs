@@ -58,7 +58,7 @@ namespace ProjectEuler
 
 			int max = (int)Math.Ceiling (Math.Sqrt(num));
 			for (int n = 1; n <= max; n++) {
-				if ((num % n) == 0) {
+				if ((num % n) == 0 && n != num) {
 					divisors.Add (n);
 					int div2 = num / n;
 					if (div2 != n && div2 > max && div2 != num) {

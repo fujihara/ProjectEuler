@@ -66,6 +66,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Problems\Problem22.cs" />
+    <Compile Include="Problems\Problem23.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />
