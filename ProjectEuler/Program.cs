@@ -35,6 +35,8 @@ namespace ProjectEuler
 					Console.WriteLine ("Error running the problem.\n");
 					Console.WriteLine ("Message: " + e.Message);
 					Console.WriteLine ("\n\n");
+
+					Console.ReadLine ();
 				}
 			}
 		}
