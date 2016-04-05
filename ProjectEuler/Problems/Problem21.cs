@@ -29,22 +29,9 @@ namespace ProjectEuler
 
 		private int GetDivisorSum(int num) 
 		{
-			var divisors = GetDivisors (num);
+			var divisors = Utils.GetProperDivisors (num);
 			int sum = divisors.Sum ();
 			return sum;
-		}
-
-		private List<int> GetDivisors(int num)
-		{
-			List<int> divisors = new List<int> ();
-
-			int max = (int)Math.Ceiling ((double)num / 2);
-			for (int n = 1; n <= max; n++) {
-				if ((num % n) == 0) {
-					divisors.Add (n);
-				}
-			}
-			return divisors;
 		}
 	}
 }
